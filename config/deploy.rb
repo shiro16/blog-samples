@@ -2,6 +2,7 @@ lock '3.2.1'
 
 set :application, 'my_app_name'
 set :repo_url, 'git@example.com:me/my_repo.git'
+set :whenever_command, "RAILS_ENV=#{fetch(:whenever_environment)} bundle exec whenever  --update-crontab" 
 
 namespace :deploy do
 
