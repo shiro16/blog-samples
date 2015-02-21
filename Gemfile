@@ -22,3 +22,11 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'database_cleaner'
+  gem 'spring-commands-rspec'
+end
