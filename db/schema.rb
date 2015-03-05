@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150305160754) do
+ActiveRecord::Schema.define(version: 20150305161208) do
 
   create_table "authors", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -90,6 +90,12 @@ ActiveRecord::Schema.define(version: 20150305160754) do
   end
 
   add_index "small_categories", ["large_category_id"], name: "index_small_categories_on_large_category_id", using: :btree
+
+  create_table "sports", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name",       limit: 255
