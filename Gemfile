@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.0'
 gem 'mysql2', git: 'https://github.com/brianmario/mysql2'
 gem 'sass-rails', '~> 5.0'
@@ -24,6 +23,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'rspec'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'faker'
